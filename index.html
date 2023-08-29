@@ -1,0 +1,7 @@
+<script>
+    let worker = new Worker("./worker.js");
+    console.log("posting message");
+    worker.postMessage({"url": "./bigfile.txt"});
+</script>
+    
+Please check the console for the output of the worker.
